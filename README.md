@@ -22,7 +22,7 @@ poetry run playwright install firefox
 Run script:
 
 ```bash
-MODEL=sienna ZIPCODE=32801 DISTANCE=120 poetry run update_vehicles
+MODEL=sienna ZIPCODE=55436 DISTANCE=300 poetry run update_vehicles
 ```
 
 ## Flat Viewer
