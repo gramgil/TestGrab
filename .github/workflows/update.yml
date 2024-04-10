@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MODEL: sienna
-      ZIPCODE: ${{ vars.ZIPCODE }}
-      DISTANCE: ${{ vars.DISTANCE }}
+      ZIPCODE: 55436
+      DISTANCE: 250
     steps:
       - name: Clone repo
         uses: actions/checkout@v4
