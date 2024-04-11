@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "sienna_grabber"
+name = "test_grab"
 version = "0.1.0"
 description = ""
-authors = ["Ianko Leite"]
+authors = ["gramgil"]
 readme = "README.md"
 packages = [{ include = "sienna_grabber", from = "src" }]
 
