@@ -202,6 +202,7 @@ def to_csv_simple(df):
                 "eta.currToDate",
                 "vin",
                 "year",
+                "drivetrain.code",
                 "model.marketingName",
                 "holdStatus",
                 "isPreSold",
@@ -237,6 +238,9 @@ def to_csv_simple(df):
         df["ETA"] = df["ETA"].apply(lambda dt: dt.split("T")[0])
 
     df["Options"] = df["Options"].apply(format_options)
+
+    # Add the drivetrain to the model name to reduce complexity.
+    df["Model"] = df["Model"] + " " + df["Drivetrain"]
 
     df = df[
         [
