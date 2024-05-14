@@ -248,6 +248,7 @@ def to_csv_simple(df):
             "VIN",
             "Year",
             "Model",
+            "Drivetrain",
             "Hold Status",
             "Pre-Sold",
             "Shipping Status",
