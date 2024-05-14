@@ -56,7 +56,7 @@ def query_toyota(page_number, query, headers):
         url,
         json=json_post,
         headers=headers,
-        timeout=15,
+        timeout=25,
     )
 
     try:
